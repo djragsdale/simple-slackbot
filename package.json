@@ -1,8 +1,21 @@
 {
   "name": "simple-slackbot",
+  "version": "1.0.0",
+  "description": "A simple way to build Slack bots",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djragsdale/simple-slackbot.git"
+  },
+  "keywords": [
+    "slack"
+  ],
   "author": "David Ragsdale",
-  "version": "0.0.1",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djragsdale/simple-slackbot/issues"
+  },
+  "homepage": "https://github.com/djragsdale/simple-slackbot#readme",
   "dependencies": {
     "lodash": "^4.17.2",
     "slackbots": "^1.0.2"
