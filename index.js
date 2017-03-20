@@ -72,7 +72,7 @@ function SimpleSlackbot(name, token, emoji, hooks, triggers) {
 SimpleSlackbot.prototype.run = function () {
 	this.bot.on('start', () => {
 		if (isObject(this.hooks) && !isEmpty(this.hooks) && isFunction(this.hooks.onStart)) {
-			this.hooks.onStart(getWelcomeFunction(this.bot));
+			this.hooks.onStart(getWelcomeFunction(this.bot, this.emoji));
 		}
 	});
 	this.bot.on('message', (message) => {
